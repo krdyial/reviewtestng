@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class DropDown {
@@ -26,7 +27,7 @@ public class DropDown {
     public void setUp(){
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS)
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://the-internet.herokuapp.com/dropdown");
 
     }
@@ -37,6 +38,19 @@ public class DropDown {
         Select select= new Select(dropdowneElement);
         select.selectByIndex(1);
 
+
+
+    }
+    @Test
+    public void printDropdownMenu(){
+        //Print all dropdown values
+        WebElement dropdowneElement=driver.findElement(By.id("dropdown"));
+        Select select= new Select(dropdowneElement);
+        List<WebElement>  allOptions= select.getOptions();
+        for (WebElement e: allOptions){
+            System.out.println(e.getText());
+        }
+        
 
     }
 }
