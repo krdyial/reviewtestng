@@ -23,5 +23,6 @@ public class KoalaPalace extends TestBase {
         Thread.sleep(5000);
         Assert.assertTrue(obj.userName.getText().contains("Mike"));
 
+
     }
 }
