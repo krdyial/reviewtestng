@@ -1,11 +1,13 @@
 package com.review.tests;
 
+import com.review.utilities.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,7 +34,7 @@ public class Alert {
         driver.switchTo().alert().accept();
     }
 
-    @Test
+    @Test(groups = "asd")
     public void getText(){
         WebElement secondAlert = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
         secondAlert.click();

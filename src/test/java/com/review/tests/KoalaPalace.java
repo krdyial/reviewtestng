@@ -3,7 +3,7 @@ package com.review.tests;
 import com.review.pages.KoalaLoginPage;
 import com.review.utilities.ConfigReader;
 import com.review.utilities.TestBase;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 

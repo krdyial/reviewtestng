@@ -1,9 +1,10 @@
 package com.review.SmokeTest;
 
 import com.review.utilities.TestBase;
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NegativeTest extends TestBase {

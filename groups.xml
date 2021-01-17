@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite 3" verbose="1">
+    <test name="method tests" >
+        <groups>
+            <run>
+                <include name="asd"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.review.tests.Alert"></class>
+            <class name="com.review.tests.DropDown"></class>
+        </classes>
+    </test>
+</suite>

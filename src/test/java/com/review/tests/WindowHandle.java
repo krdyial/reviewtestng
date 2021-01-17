@@ -1,7 +1,7 @@
 package com.review.tests;
 
 import com.review.utilities.TestBase;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

@@ -1,7 +1,8 @@
 package com.review.tests;
 
+import com.review.utilities.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,10 +42,10 @@ public class DropDown {
 
 
     }
-    @Test
+    @Test(groups = "asd")
     public void printDropdownMenu(){
         //Print all dropdown values
-        WebElement dropdowneElement=driver.findElement(By.id("dropdown"));
+        WebElement dropdowneElement= driver.findElement(By.id("dropdown"));
         Select select= new Select(dropdowneElement);
         List<WebElement>  allOptions= select.getOptions();
         for (WebElement e: allOptions){

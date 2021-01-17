@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke test suite" verbose="2">
+    <test name="smoke tests">
+       <classes>
+           <class name="com.review.tests.Alert"></class>
+           <class name="com.review.tests.DropDown"></class>
+       </classes>
+    </test>
+</suite>
